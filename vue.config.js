@@ -3,5 +3,8 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
       ? '/ecommerce-catalog/'
-      : '/'
+      : '/',
+    devserver: {
+      Proxy: 'https://fakestoreapi.com/'
+    }
   }
